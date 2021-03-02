@@ -1,16 +1,13 @@
+import java.util.Scanner;
+
 public class MyFirstProgram {
 
    public static void main(String [] args){
               
-      String x= "Water";
-      String y= "kool-aid";
-      String temp;
-      
-      temp=x;
-      x=y;
-      y=temp;
-      System.out.println(x);
-      System.out.println(y);
+   Scanner scanner = new Scanner(System.in);
+   System.out.println("what is your name? ");
+   String name = scanner.nextLine();
+   System.out.println("Hello "+name);
       
      }
 }
