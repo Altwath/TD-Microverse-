@@ -13,7 +13,11 @@ public class MyFirstProgram {
    System.out.println("How old are you?"); //We want the program to accept only integer 
    int age = scanner.nextInt(); //This line is the same as line 10 but it accepts only integrs 
    System.out.println("You are "+age+" years old");
-      
+
+   System.out.println("What is your favorite food?");
+   scanner.nextLine();     //We need this line in order to reseat the line. 
+   String food = scanner.nextLine();
+   System.out.println("you like "+food);      
 
      }
 }
