@@ -1,17 +1,24 @@
-import javax.swing.JOptionPane;
+
 import java.util.Scanner;
-import java.util.Random;
 
 public class MyFirstProgram {
 
    
    public static void main(String[] args) {
    
-   Random random = new Random();
-   
-   int X = random.nextInt(6)+1;
+    Scanner scanner = new Scanner(System.in);
 
-   System.out.println(X);
+     System.out.println("You are still playing the game");
+
+     String response = scanner.next();
+
+     if (response.equals("q") || response.equals("Q") ){
+        System.out.println("You quit the game!");
+
+     }
+ else{
+    System.out.println("You are still playing the game *PEW PEW*");
+ }
      
 
      }
